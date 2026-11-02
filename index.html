@@ -39,16 +39,18 @@
     }
 
     header {
-      padding: 26px 0;
-      background: white;
-      border-bottom: 1px solid #E7EAF0;
-    }
+  padding: 12px 0;
+  background: #10041f;
+  border-bottom: 1px solid #321047;
+}
 
-    .brand {
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
+    .brand-logo {
+  display: block;
+  height: 76px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
 
     .brand span {
       color: var(--blue);
@@ -167,9 +169,11 @@
     }
 
     @media (max-width: 750px) {
-      .hero {
-        padding: 75px 0;
-      }
+  .brand-logo {
+    height: auto;
+    width: min(100%, 340px);
+  }
+}
 
       .features {
         grid-template-columns: 1fr;
@@ -192,8 +196,8 @@
     <div class="container">
       <a href="./" aria-label="Savvy Monkey home">
   <img
-    src="./logo.png"
-    alt="Savvy Monkey"
+    src="./savvy-monkey-header.png"
+    alt="Savvy Monkey - Shop Smarter. Buy Better."
     class="brand-logo"
   >
 </a>
